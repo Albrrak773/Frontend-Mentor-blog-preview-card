@@ -8,6 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     font-family: "figtree", sans-serif;
+    font-size: 1rem;
 }
 
 #card {
@@ -34,6 +35,7 @@ body {
    width: min-content;
    height: min-content;
    border-radius: 0.3rem;
+   font-size: 1rem;
 }
 
 #published-date {
@@ -42,6 +44,11 @@ body {
 
 #card-title {
     font-weight: 800;
+}
+
+#card-title:hover {
+    cursor: pointer;
+    color: var(--main-yellow);
 }
 
 #card-discriptoin {
@@ -54,7 +61,11 @@ body {
     align-items: center;
     justify-content: start;
     gap: 1rem;
+    width: fit-content;
 }
+#author-container:hover {
+    cursor: pointer;
+} 
 #author-img {
     width: 30px;
     height: 30px;
@@ -63,4 +74,11 @@ body {
 #author-name {
     margin: 0;
     font-weight: 700;
+}
+
+@media screen and (max-width: 760px){
+    #card {
+        width: 350px;
+    }
+    
 }
