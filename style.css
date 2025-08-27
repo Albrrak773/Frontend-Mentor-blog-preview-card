@@ -1,8 +1,13 @@
+:root {
+    --main-yellow: hsl(47, 88%, 63%);
+}
+
 body {
-    background-color: hsl(47, 88%, 63%);
+    background-color: var(--main-yellow);
     display: flex; 
     align-items: center;
     justify-content: center;
+    font-family: "figtree", sans-serif;
 }
 
 #card {
@@ -11,30 +16,51 @@ body {
     padding: 1rem;
     border: 1px black solid;
     width: 380px;
+    height: 522px;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
+    box-shadow: 6px 6px black;
 }
 
-#tag {
+#card-img {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
 
+#tag{
+   background-color: var(--main-yellow); 
+   padding: 0.5rem;
+   font-weight: 800;
+   width: min-content;
+   height: min-content;
+   border-radius: 0.3rem;
 }
 
 #published-date {
-
+    color:hsl(0, 0%, 7%);
 }
 
 #card-title {
-
+    font-weight: 800;
 }
 
 #card-discriptoin {
-
+    color: hsl(0, 0%, 47%);
 }
 
 #author-container {
-
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+#author-img {
+    width: 30px;
+    height: 30px;
 }
 
 #author-name {
-
+    margin: 0;
+    font-weight: 700;
 }
